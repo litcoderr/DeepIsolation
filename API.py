@@ -25,7 +25,8 @@ class Model:
         model = model.eval()
 
         # ******** Download from google drive ********
-        self.downloader.download(self.pretrained_url_id, self.path)
+        if not os.path.exists(self.path):
+            self.downloader.download(self.pretrained_url_id, self.path)
 
         # 1-1. check if need data parallel
         if self.n_gpu >= 2:
