@@ -4,7 +4,7 @@ def build_backbone(backbone, output_stride, BatchNorm):
     if backbone == 'resnet':
         return resnet.ResNet101(output_stride, BatchNorm)
     elif backbone == 'xception':
-        return xception.AlignedXception(output_stride, BatchNorm, pretrained=True)
+        return xception.AlignedXception(output_stride, BatchNorm, pretrained=False)
     elif backbone == 'drn':
         return drn.drn_d_54(BatchNorm)
     elif backbone == 'mobilenet':
