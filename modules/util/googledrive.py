@@ -5,6 +5,7 @@ class Downloader():
         pass
 
     def download(self, id, destination):
+        print("Start Pre-trained Model Download")
         URL = "https://docs.google.com/uc?export=download"
 
         session = requests.Session()
@@ -17,6 +18,7 @@ class Downloader():
             response = session.get(URL, params=params, stream=True)
 
         self.save_response_content(response, destination)
+        print("Finished Pre-trained Model Download")
 
     def get_confirm_token(self, response):
         for key, value in response.cookies.items():
