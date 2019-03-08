@@ -37,16 +37,3 @@ class STFTConverter:
         D = mag * phase
         y_hat = librosa.core.istft(D)
         return y_hat
-
-#%%
-if __name__ == "__main__":
-    from modules.dataset.musdb18 import Dataset
-    dataset = Dataset(r"C:\Users\USER\Desktop\musdb18_npy\musdb_npy_16000\train","train",comp=True,direct=True)
-    mix, inst = dataset[12]
-    print(mix.shape)
-    
-    
-    
-    
-    
-    
