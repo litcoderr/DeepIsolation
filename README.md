@@ -1,8 +1,10 @@
 # DeepIsolation
 Deep isolation using DeepLabv3++ Segmentation Model
 
-# Usage
+# Prior Research
+- "Looking to Listen" by Google : [https://ai.googleblog.com/2018/04/looking-to-listen-audio-visual-speech.html](link)
 
+# Usage
 
 ### 1. Import ModelAPI
 ```python
