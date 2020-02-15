@@ -42,7 +42,7 @@ class V2(nn.Module):
         
         x = self.tanh(x)
         input = input*x
-        return input
+        return input, x
 
     def freeze_bn(self):
         for m in self.modules():
