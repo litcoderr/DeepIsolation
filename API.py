@@ -15,7 +15,8 @@ class Model:
 
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-        self.pretrained_url_id = "1ZzvYv_KRmf6arhqYUomRgAt3iZBtNyZu"
+        self.pretrained_url_id = "1Ojd5dZ9BNGYT9COK-k4OqnpI3xbDSNek"
+        # self.pretrained_url_id = "1ZzvYv_KRmf6arhqYUomRgAt3iZBtNyZu"
         self.downloader = Downloader()
 
     def getModel(self):
